@@ -1,7 +1,7 @@
 ---
 
 - include: "install-pi.yml"
-  when: ansible_nodename == "raspberrypi"
+  when: ansible_lsb.id == "Raspbian"
   become: yes
   become_user: root
 
