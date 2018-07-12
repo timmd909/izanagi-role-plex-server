@@ -15,3 +15,9 @@
     repo: deb https://dev2day.de/pms/ jessie main
     state: present
     filename: plexmediaserver
+
+- name: "Install Plex"
+  apt:
+    name: plexmediaserver
+    state: latest
+    install_recommends: yes
